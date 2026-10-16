@@ -1,4 +1,4 @@
-// config.js - ESM Version
+// config.js - extraction v2 - KING EDITION FINAL 👑
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -11,7 +11,6 @@ if (fs.existsSync(path.resolve('config.env'))) {
   dotenv.config({ path: path.resolve('config.env') });
 }
 
-// Helper to convert "true"/"false" strings to actual boolean
 function convertToBool(text, trueValue = 'true') {
   return text === trueValue;
 }
@@ -21,15 +20,15 @@ export default {
   SESSION_ID: process.env.SESSION_ID || "",
   PREFIX: process.env.PREFIX || ".",
   CHATBOT: process.env.CHATBOT || "off",
-  BOT_NAME: process.env.BOT_NAME || "KHAN-MD",
+  BOT_NAME: process.env.BOT_NAME || "extraction v2",
   MODE: process.env.MODE || "private",
-  REPO: process.env.REPO || "https://github.com/JawadTechYT/KHAN-MD",
+  REPO: process.env.REPO || "https://github.com/kingmadala/extraction-v2",
   WEBPAIR: process.env.WEBPAIR || "https://khanmd-pairx.onrender.com",
   NEWSLETTERID: process.env.NEWSLETTERID || "120363426563532140@newsletter",
  
   // ===== OWNER & DEVELOPER SETTINGS =====
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "92342*******",
-  OWNER_NAME: process.env.OWNER_NAME || "Jᴀᴡᴀᴅ TᴇᴄʜX",
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "254738072477",
+  OWNER_NAME: process.env.OWNER_NAME || "king",
   SUDO: process.env.SUDO 
     ? process.env.SUDO.split(',').map(s => s.trim()) 
     : ["123@lid"],
@@ -56,14 +55,14 @@ export default {
   // ===== AUTO-RESPONSE SETTINGS =====
   AUTO_REPLY: process.env.AUTO_REPLY || "false",
   AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
-  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*KHAN MD VIEWED YOUR STATUS 🤖*",
+  AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*extraction v2 VIEWED YOUR STATUS 👑*",
   READ_MESSAGE: process.env.READ_MESSAGE || "false",
-  REJECT_MSG: process.env.REJECT_MSG || "*📞 ᴄαℓℓ ɴσт αℓℓσωє∂ ιɴ тнιѕ ɴᴜмвєʀ уσυ ∂σɴт нανє ᴘєʀмιѕѕισɴ 📵*",
+  REJECT_MSG: process.env.REJECT_MSG || "*📞 CALL NOT ALLOWED KING PRIVATE 📵*",
 
   // ===== REACTION SETTINGS =====
   AUTO_REACT: process.env.AUTO_REACT || "false",
   OWNER_REACT: process.env.OWNER_REACT || "false",
-  STICKER_NAME: process.env.STICKER_NAME || "KHAN-MD",
+  STICKER_NAME: process.env.STICKER_NAME || "extraction v2",
   AUTO_STICKER: process.env.AUTO_STICKER || "false",
   AUTO_VOICE: process.env.AUTO_VOICE || "false",
   STATUS_SENDER: process.env.STATUS_SENDER || "true",
@@ -99,18 +98,18 @@ export default {
   ANTIEDIT_PATH: process.env.ANTIEDIT_PATH || "inbox",
 
   // ===== BOT BEHAVIOR & APPEARANCE =====
-  DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",
+  DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ king*",
   AUTO_LIKE_STATUS: process.env.AUTO_LIKE_STATUS || "false",
   AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
   AUTO_BIO: process.env.AUTO_BIO || "false",
   
-  // ===== WELCOME & GOODBYE SETTINGS =====
-  WELCOME: process.env.WELCOME || "false",
-  GOODBYE: process.env.GOODBYE || "false",
+  // ===== WELCOME & GOODBYE - KARIBU MPENDWA EDITION =====
+  WELCOME: process.env.WELCOME || "true",
+  GOODBYE: process.env.GOODBYE || "true",
   ADMIN_ACTION: process.env.ADMIN_ACTION || "false",
-  WELCOME_MESSAGE: process.env.WELCOME_MESSAGE || "*_@user joined the group, welcome! 🎉_*",
-  GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || "*_@user has left the group, we will miss them! 👋_*",
+  WELCOME_MESSAGE: process.env.WELCOME_MESSAGE || "🔥👑 *KARIBU MPENDWA @user* 👑🔥\n\nKaribu sana kwenye *@gname* ❤️\n\nTunafurahi sana kukuona hapa mpendwa wetu!\n\n👥 Familia yetu sasa ni: *@count* members\n👑 Imeandaliwa na: *king*\n🤖 Bot: *extraction v2*\n\nKaa, jifunze, furahi na uheshimu wenzako.\n\n*Karibu sana mpendwa!* 🙏✨🎉",
+  GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || "💔 *KWA HERI MPENDWA @user* 💔\n\nUmetoka kwenye *@gname* 😢\n\nTulipenda uwepo wako mpendwa.\nTulibaki @count sasa.\n\nMlango uko wazi ukirudi tena!\n\n*Kwa heri mpendwa!* 👋",
 
-  VERSION: process.env.VERSION || "10.0 Bᴇᴛᴀ",
-  TIMEZONE: process.env.TIMEZONE || "Asia/Karachi",
+  VERSION: process.env.VERSION || "2.0",
+  TIMEZONE: process.env.TIMEZONE || "Africa/Nairobi",
 };
